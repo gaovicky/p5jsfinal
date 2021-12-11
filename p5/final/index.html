@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather Conditions</title>
+  <style>
+    /* import google font */
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
+
+    body {
+      padding: 0;
+      margin: 0;
+    }
+
+    /* stylize the button https://www.w3schools.com/css/css3_buttons.asp*/
+    button {
+      font-family: 'Raleway', sans-serif;
+      font-size: 16px;
+      border-radius: 5px;
+      color: #393939; /*charcoal*/
+      background-color: #FACCCC; /*pink*/
+      border: 2px solid #FACCCC; /*pink*/
+      padding: 12px 30px; /*height width*/
+      margin-left: 10px;
+    }
+    /*change color when pressed*/
+    button:hover {
+      color: #F8F8F8; /*light grey*/
+      background-color: #324266; /*navy blue*/
+      border: 2px solid #324266; /*navy blue*/
+    }
+    /*style input box*/
+    input {
+      font-family: 'Raleway', sans-serif;
+      font-size: 16px;
+      width: 280px;
+      padding: 12px 20px;
+      color: #393939; /*charcoal*/
+      background-color: #DDDDDD; /*grey*/
+      border: 2px solid #DDDDDD; /*grey*/
+      margin-left: 2px;
+      border-radius: 5px;
+    }
+    /*stylize "City:"*/
+    p {
+      color: #393939; /*charcoal*/
+      font-family: 'Raleway', sans-serif;
+      margin-left: 10px;
+    }
+    /*make the input box and button on the same line*/
+    .center {
+      display: flex;
+      align-items: center;
+    }
+  </style>
+  <script src="../p5.js"></script>
+  <!-- <script src="../addons/p5.sound.js"></script> -->
+  <script src="sketch.js"></script>
+</head>
+
+<body>
+  <div class="center">
+    <p>City: <input id="city"></input></p>
+    <button id="search">Search</button>
+  </div>
+</body>
+
+</html>
